@@ -368,7 +368,7 @@ body {
   align-items: center;
   background: #263143;
   width: 100%;
-  font-family: 'Lobster', sans-serif;
+  font-family: 'Fredoka One', sans-serif;
   overflow: hidden;
   position: fixed;
   top: 0;
@@ -556,7 +556,8 @@ body {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  font-family: 'Concert One', sans-serif; }
   .slide3 > div {
     display: flex;
     justify-content: center;

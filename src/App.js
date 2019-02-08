@@ -35,7 +35,7 @@ export default class App extends Component {
     });
     this.pw.on('before', (index, prev) => {
     });
-    this.pw.on('after', (index) => {
+    this.pw.on('after', index => {
       this.setState({ activeIndex: index });
     });
     setTimeout(() => {
@@ -53,7 +53,7 @@ export default class App extends Component {
             index={0} />
           <Slide1 
             text1='Happy'
-            text2='Fathers Day'
+            text2='Birthday'
             color={this.colors[0]}
             activeIndex={this.state.activeIndex}
             index={1}

@@ -8,7 +8,7 @@ export default function Slide3(props) {
 				background: props.color
 			}}>
   		<div>
-  			<p>I hope today you are surrounded by loved ones and great food. I am sorry I cannot be there to join you, but I am thinking about you a lot. I am so thankful for all your support. It is helping reach new heights!</p>
+  			<p>We've had such a great year together. We overcame sickness, celebrated birthdays and achievements, moved Steven into his first home, got a new puppy, and became as close as we have ever been. I am so proud to call you my dad!</p>
   			<p
   				style={{
   					marginTop: '0px',
