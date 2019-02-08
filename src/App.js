@@ -43,7 +43,7 @@ export default class App extends Component {
     }, 1000);
   }
 
-  render = () => {
+  render() {
     return (
       <div className="App" style={{height: window.innerHeight}}>
         <div id='switcher'>
