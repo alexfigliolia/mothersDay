@@ -4,7 +4,7 @@
   @include headerShadow;
   @include center;
   // font-family: -apple-system, BlinkMacSystemFont, “Segoe UI”, Roboto, Helvetica, Arial, sans-serif;
-  font-family: 'Concert One', sans-serif;
+  font-family: 'Patua One', sans-serif;
   &>div {
     @include center;
     height: 100%;
@@ -25,6 +25,9 @@
     	max-width: 600px;
     	color: #fff;
     	text-shadow: 0px 0px 2.5px #000;
+        @media #{$mq-410} {
+            font-size: 4vh;
+        }
     }
     &>.shape {
     	position: absolute;
@@ -55,9 +58,9 @@
     		top: auto;
     		bottom: 10%;
     		left: calc(25% - 25px);
-    		background: #F64D64;
+    		background: #F6FE55;
     		&>div {
-    			background: #F64D64;
+    			background: #F6FE55;
     		}
     	}
     	&:nth-of-type(4) {

@@ -8,7 +8,7 @@ export default function Slide3(props) {
 				background: props.color
 			}}>
   		<div>
-  			<p>We've had such a great year together. We overcame sickness, celebrated birthdays and achievements, moved Steven into his first home, got a new puppy, and became as close as we have ever been. I am so proud to call you my dad!</p>
+  			<p>I wanted to tell you that I love and miss you a lot! I hope Amsterdam was amazing and you had a great month leading up to Mother's Day. I wish I could be there with you today!</p>
   			<p
   				style={{
   					marginTop: '0px',

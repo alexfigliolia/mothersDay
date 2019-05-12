@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Swipe from './Swipe';
 
 export default class Slide2 extends Component {
   constructor(props) {
@@ -9,21 +10,27 @@ export default class Slide2 extends Component {
 	}
 
 
-	componentDidMount = () => {
+	componentDidMount() {
 		setTimeout(() => {
 			this.setState({ classes: 'slide2 slide2-show' });
 		}, 1000);
 	}
 
-	componentWillReceiveProps = (nextProps) => {
-		if(nextProps.activeIndex === nextProps.index) {
+	componentWillReceiveProps({ activeIndex, index }) {
+		if(activeIndex === index) {
 			this.setState({ classes: 'slide2 slide2-show' });
 		} else {
 			this.setState({ classes: 'slide2' });
 		}
 	}
 
-  render = () => {
+	shouldComponentUpdate({ activeIndex }, { classes }) {
+		if(activeIndex !== this.props.activeIndex) return true;
+		else if(classes !== this.state.classes) return true;
+		return false;
+	}
+
+  render() {
     return (
     	<div 
 				className={this.state.classes}
@@ -33,7 +40,7 @@ export default class Slide2 extends Component {
 				<div>
 					<h1>
 						{
-							'Hey Dad'.split('').map((letter, i) => {
+							'Hey Mom!'.split('').map((letter, i) => {
 								if(letter === ' ') {
 									return (
 										<div key={i}><h1>&nbsp;</h1></div>
@@ -61,7 +68,7 @@ export default class Slide2 extends Component {
 												className='fetti'
 												style={{
 													transition: `transform 0.3s ${0.1 + (i/10)}s, opacity 0.2s ${0.3 + (i/10)}s`,
-													background: '#F64D64'
+													background: '#F6FE55'
 												}}></div>
 											<div 
 												className='fetti'
@@ -75,6 +82,7 @@ export default class Slide2 extends Component {
 							})
 						}
 					</h1>
+					<Swipe />
 				</div>
 			</div>
     );

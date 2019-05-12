@@ -29,6 +29,12 @@
           margin: 0;
           margin-top: -50%;
           text-shadow: 0px 0px 15px rgba(#000, 0.25);
+          @media #{$mq-375} {
+            font-size: 11vh;
+          }
+          @media #{$mq-410} {
+            font-size: 9.5vh;
+          }
           @media #{$mq-670} {
             font-size: 16vh;
           }
@@ -82,5 +88,34 @@
         opacity: 0;
       }
     }
+  }
+  &>div>.swipe {
+    opacity: 1;
+    animation: swipe 2s 1s infinite;
+  }
+}
+
+.swipe {
+  position: absolute;
+  bottom: 10vh;
+  opacity: 0;
+  transition: opacity 1s 1.25s;
+  &>img {
+    height: 50px;
+  }
+}
+
+@keyframes swipe {
+  0% {
+    transform: scale(1) translateX(25px);
+  }
+  25% {
+    transform: scale(0.9) translateX(25px);
+  }
+  50% {
+    transform: scale(0.9) translateX(-25px);
+  }
+  100% {
+    transform: scale(1) translateX(25px);
   }
 }
