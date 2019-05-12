@@ -25,7 +25,7 @@
     	max-width: 600px;
     	color: #fff;
     	text-shadow: 0px 0px 2.5px #000;
-        @media #{$mq-410} {
+        @media #{$mq-iphoneX} {
             font-size: 3vh;
         }
     }
